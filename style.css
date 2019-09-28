@@ -136,7 +136,7 @@ nav ul {
   margin: 20px 12px 21px 12px;
 }
 
-.previous, .next, .slider-text, .vid-text h2, .scroll, .date, .twitter-desktop, .templates-wrapper ul {
+.previous, .next, .slider-text, .vid-text h2, .scroll, .date, .twitter-desktop, .templates-wrapper ul, .top-bg {
   display: none;
 }
 
@@ -1051,5 +1051,16 @@ footer {
     font-style: italic;
     text-transform: uppercase;
     letter-spacing: 2.5px;
+  }
+
+  .top-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 1300px;
+    height: 1366px;
+    background-image: url('assets/img/top-bg.png');
+    z-index: -999;
   }
 }
