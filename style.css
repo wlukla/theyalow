@@ -232,6 +232,7 @@ video {
 
 .mid-bar {
   position: relative;
+  background-color: #ffffff;
   background-position: -4px 0;
   width: 640px;
   height: 170px;
@@ -570,7 +571,8 @@ footer {
     text-transform: uppercase;
   }
 
-  .nav-bg-1, .nav-bg-2 {
+  header .nav-bg-1, header .nav-bg-2 {
+    display: block;
     width: 453px;
     height: 41px;
     position: absolute;
@@ -588,6 +590,7 @@ footer {
   .nav-bg-2 {
     top: 66px;
     left: 703px;
+    z-index: -1;
   }
 
   nav {
@@ -1061,6 +1064,6 @@ footer {
     width: 1300px;
     height: 1366px;
     background-image: url('assets/img/top-bg.png');
-    z-index: -999;
+    z-index: -99;
   }
 }
