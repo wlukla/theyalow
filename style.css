@@ -40,6 +40,14 @@
 
 }
 
+a {
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  background-image: linear-gradient(to top, #464646, #5d5d5d 100%);
+}
+
 header {
   display: flex;
   height: 62px;
