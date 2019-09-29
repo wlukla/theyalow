@@ -55,8 +55,9 @@ header {
 
 .logo {
   display: flex;
-  align-items: center;
   width: 186px;
+  align-items: center;
+
   background-image: linear-gradient(to top, #464646, #5d5d5d 100%);
 }
 
@@ -68,6 +69,7 @@ header {
 
 .logo h1{
   margin-top: 2px;
+
   text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.42);
   color: #ffffff;
   font-family: "Open Sans";
@@ -80,32 +82,36 @@ header {
 nav {
   width: 455px;
   height: 62px;
+
   font-family: 'Segoe WP';
 }
 
 nav ul {
-  height: 100%;
   display: flex;
+  height: 100%;
 }
 
 .nav-item {
-  height: 100%;
   display: flex;
+  height: 100%;
+
   background-color: #f5c506;
 }
 
 .nav-item span {
+  margin-top: 22px;
+  margin-bottom: 22px;
+
   color: #9b7d08;
   font-size: 19px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.19px;
-  margin-top: 22px;
-  margin-bottom: 22px;
 }
 
 .about-item {
   width: 171px;
+
   border-right: 1px solid #dbb005;
 }
 
@@ -117,6 +123,7 @@ nav ul {
 
 .services-item {
   width: 132px;
+
   border-right: 1px solid #dbb005;
 }
 
@@ -144,15 +151,17 @@ video {
   width: 640px;
   height: 327px;
   margin: 0;
+
   background-image: url('assets/img/video-preview.png');
 }
 
 .main-play-pause {
   width: 67px;
   height: 67px;
+  margin: 0 278px 81px 295px;
+
   background-color: rgba(245, 197, 6, 0.71);
   border-radius: 50%;
-  margin: 0 278px 81px 295px;
 }
 
 .main-play-pause img {
@@ -163,21 +172,23 @@ video {
 
 .slider {
   position: relative;
+
   height: 327px;
 }
 
 .controls {
-  display: flex;
-  flex-direction: column;
   position: absolute;
   left: 0;
   bottom: 0;
+
+  display: flex;
+  flex-direction: column;
   width: 640px;
 }
 
 .bottom-interface {
-  height: 27px;
   display: flex;
+  height: 27px;
   margin-left: 83px;
   margin-bottom: 22px;
 }
@@ -185,9 +196,10 @@ video {
 .play-pause {
   width: 27px;
   height: 27px;
+  margin-right: 24px;
+
   background-color: #f5c506;
   opacity: 0.37;
-  margin-right: 24px;
 }
 
 .play-pause img {
@@ -198,6 +210,7 @@ video {
 
 .status {
   position: relative;
+
   width: 404px;
   height: 12px;
   margin: 8px 31px 7px 0;
@@ -206,6 +219,7 @@ video {
 .all-status {
   width: 404px;
   height: 12px;
+
   background-color: #f5c506;
   opacity: 0.28;
   border-radius: 4px;
@@ -214,8 +228,10 @@ video {
 .current-status {
   position: absolute;
   top: 0;
+
   width: 179px;
   height: 12px;
+
   background-color: #f5c506;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -233,33 +249,41 @@ video {
 
 .mid-bar {
   position: relative;
-  background-color: transparent;
-  background-position: -4px 0;
+
+  display: flex;
   width: 640px;
   height: 170px;
-  display: flex;
+
+  background-color: transparent;
+  background-position: -4px 0;
+
 }
 
 .mid-bar-bg-1 {
-  top: 380px;
   position: absolute;
-  background-image: url('assets/img/mid_bg.png');
+  top: 380px;
+
   height: 170px;
   width: 640px;
+
+  background-image: url('assets/img/mid_bg.png');
 }
 
 .mid-bar-bg-2 {
-  top: 385px;
   position: absolute;
-  background-image: url('assets/img/mid_bg.png');
+  top: 385px;
+
   height: 170px;
   width: 640px;
+
+  background-image: url('assets/img/mid_bg.png');
 }
 
 .item {
-  height: 170px;
   display: flex;
   flex-direction: column;
+
+  height: 170px;
 }
 
 .item-1 {
@@ -321,9 +345,11 @@ video {
 
 .text-block {
   position: relative;
+
   width: 299px;
   height: 232px;
   margin: 11px 9px 9px 9px;
+
   background-color: #ec9e03;
 }
 
@@ -332,6 +358,7 @@ video {
   height: 189px;
   margin-top: 15px;
   margin-left: 26px;
+
   color: #ffffff;
   font-family: "Segoe WP Light";
   font-size: 29px;
@@ -345,10 +372,11 @@ video {
 }
 
 .video-block {
-  margin-top: 10px;
   position: relative;
+
   height: 232px;
   width: 315px;
+  margin-top: 10px;
 }
 
 .video-block > video{
@@ -357,11 +385,12 @@ video {
 }
 
 .video-block > .video-button {
-  display: flex;
-  flex-direction: column;
   position: absolute;
   left: 0;
   bottom: 0;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .video-block > .video-button > .main-play-pause {
@@ -377,10 +406,11 @@ video {
 }
 
 .twitter {
+  display: flex;
   width: 640px;
   height: 233px;
+
   background-color: #f5c507;
-  display: flex;
 }
 
 .twitter img {
@@ -396,8 +426,9 @@ video {
 }
 
 .twitter .message-item p{
-  padding-top: 8px;
   margin: 9px 40px 5px 27px;
+  padding-top: 8px;
+
   color: #8f8e8e;
   font-family: "Asap Regular";
   font-size: 13px;
@@ -407,6 +438,7 @@ video {
 
 .twitter .message-item1 {
   margin-top: 24px;
+
   background-image: url("assets/img/message-bg-1.png");
 }
 
@@ -415,8 +447,9 @@ video {
 }
 
 .twitter .message-item3 {
-  background-image: url("assets/img/message-bg-3.png");
   margin-bottom: 13px;
+
+  background-image: url("assets/img/message-bg-3.png");
 }
 
 form {
@@ -439,25 +472,28 @@ input[type="text"] {
 input[type="submit"] {
   width: 69px;
   height: 31px;
-  border: 1px solid #d0a806;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background-image: linear-gradient(to top, #d08e0b 0%, #eaa926);
 
   color: #ffffff;
   font-family: "Asap Regular";
   font-size: 15px;
+
+  border: 1px solid #d0a806;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-image: linear-gradient(to top, #d08e0b 0%, #eaa926);
 }
 
 .templates {
   width: 640px;
   height: 466px;
+
   background-color: #474747;
 }
 
 .templates h2 {
-  padding-top: 38px;
   margin-left: 18px;
+  padding-top: 38px;
+
   color: #f5c506;
   font-family: "Open Sans";
   font-size: 39px;
@@ -466,9 +502,10 @@ input[type="submit"] {
 }
 
 .templates .img-block {
+  position: relative;
+
   width: 640px;
   height: 298px;
-  position: relative;
   margin-top: 38px;
 }
 
@@ -491,8 +528,10 @@ input[type="submit"] {
   position: absolute;
   top: 0;
   left: 27px;
+
   width: 116px;
   height: 116px;
+
   background-color: #f5c506;
   border-radius: 50%;
 }
@@ -501,6 +540,7 @@ input[type="submit"] {
   display: block;
   margin-top: 51px;
   margin-left: 7px;
+
   color: #ffffff;
   font-family: "PT Sans Narrow Bold";
   font-size: 19px;
@@ -511,15 +551,18 @@ input[type="submit"] {
 footer {
   width: 640px;
   height: 43px;
+
   box-shadow: 0 1px 5px 5px rgba(0, 0, 0, 0.75);
-  overflow: auto;
   background-color: #4c4c4c;
+
+  overflow: auto;
 }
 
 .footer-logo {
   width: 133px;
-  padding-top: 6px;
+
   margin-left: 65px;
+  padding-top: 6px;
 }
 
 .footer-logo img {
@@ -529,11 +572,12 @@ footer {
 
 .footer-logo h2 {
   display: inline-block;
-  line-height: 31px;
   margin-left: 7px;
+
   vertical-align: top;
   text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.42);
   color: #ffffff;
+  line-height: 31px;
   font-family: "Open Sans";
   font-size: 17px;
   font-style: italic;
@@ -543,17 +587,19 @@ footer {
 
 @media screen and (min-width: 1000px) {
   header {
+    position: relative;
+
     width: 1300px;
     height: 112px;
     margin-bottom: 56px;
-    position: relative;
   }
 
   header .logo {
     width: 217px;
     height: 83px;
-    background-image: none;
     margin: 28px 350px 1px 140px;
+
+    background-image: none;
   }
 
   header .logo img {
@@ -565,6 +611,7 @@ footer {
 
   header .logo h1 {
     padding-top: 5px;
+
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.42);
     color: #ffffff;
     font-family: "Open Sans";
@@ -574,10 +621,11 @@ footer {
   }
 
   header .nav-bg-1, header .nav-bg-2 {
+    position: absolute;
+
     display: block;
     width: 453px;
     height: 41px;
-    position: absolute;
 
     background-color:#f5c506;
     opacity: 0.27;
@@ -586,12 +634,14 @@ footer {
   .nav-bg-1 {
     top: 63px;
     left: 699px;
+
     z-index: -2;
   }
 
   .nav-bg-2 {
     top: 66px;
     left: 703px;
+
     z-index: -1;
   }
 
@@ -609,18 +659,19 @@ footer {
     width: 21px;
     height: 19px;
     margin: 0;
-    margin: 11px 9px 11px 39px
+    margin: 11px 9px 11px 39px;
   }
 
   .about-item span {
+    margin: 0;
+    margin: 12px 20px 0px 0;
+
     color: #9b7d08;
     font-family: "Segoe WP";
     font-size: 17px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.17px;
-    margin: 0;
-    margin: 12px 20px 0px 0;
   }
 
   .services-item img {
@@ -630,13 +681,14 @@ footer {
   }
 
   .services-item span {
+    margin: 12px 18px 13px 0;
+
     color: #9b7d08;
     font-family: "Segoe WP";
     font-size: 17px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.17px;
-    margin: 12px 18px 13px 0;
   }
 
   .contact-item img {
@@ -646,13 +698,14 @@ footer {
   }
 
   .contact-item span {
+    margin: 12px 22px 13px 0;
+
     color: #9b7d08;
     font-family: "Segoe WP";
     font-size: 17px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.17px;
-    margin: 12px 22px 13px 0;
   }
 
   .slider {
@@ -668,6 +721,7 @@ footer {
     width: 32px;
     height: 57px;
     margin-top: 132px;
+
     background-color: rgba(245, 197, 6, 0.71);
 
   }
@@ -678,6 +732,7 @@ footer {
 
   .previous img {
     margin: 19px 11px 19px 8px;
+
     transform: rotate(180deg);
   }
 
@@ -689,6 +744,7 @@ footer {
     width: 549px;
     height: 327px;
     margin-right: 37px;
+
     background-image: url('assets/img/poster-desktop.png');
   }
 
@@ -696,6 +752,7 @@ footer {
     display: block;
     margin-top: 80px;
     margin-right: 127px;
+
     line-height: 64px;
     text-align: center;
     color: #f5c506;
@@ -710,13 +767,15 @@ footer {
     display: block;
     margin-top: 12px;
     margin-left: 12px;
+
     color: #ffffff;
   }
 
   .controls {
+    left: 96px;
+
     width: 549px;
     bottom: 71px;
-    left: 96px;
   }
 
   .mid-bar-bg-1, .mid-bar-bg-2, .nav-bg-1, .nav-bg-2 {
@@ -724,12 +783,13 @@ footer {
   }
 
   .mid-bar {
+    position: relative;
+
     display: flex;
     width: 1300px;
     height: 212px;
-    position: relative;
-    box-shadow: 0 8px 10px 10px rgba(0, 0, 0, 0.75);
 
+    box-shadow: 0 8px 10px 10px rgba(0, 0, 0, 0.75);
     background-color: #ffffff;
     background-image: url('assets/img/mid-bar-bg.png');
   }
@@ -737,8 +797,9 @@ footer {
   .mid-bar .item {
     width: 340px;
     height: 100%;
-    border-left: 1px solid rgba(0, 0, 0, 0.14);
     margin: 0;
+
+    border-left: 1px solid rgba(0, 0, 0, 0.14);
   }
 
   .mid-bar .item:first-child {
@@ -747,6 +808,7 @@ footer {
 
   .mid-bar .item:last-child {
     margin-right: 140px;
+
     border-right: 1px solid rgba(0, 0, 0, 0.14);
   }
 
@@ -757,12 +819,10 @@ footer {
   }
 
   .mid-bar .item span {
-    /* Style for "better des" */
     font-family: "Segoe WP Light";
     font-size: 27px;
     font-weight: 300;
     text-transform: uppercase;
-    /* Text style for "better des" */
     letter-spacing: 0.27px;
   }
 
@@ -784,6 +844,7 @@ footer {
 
   .mid-bar .item-2 span {
     margin-left: 110px;
+
     line-height: 29px;
   }
 
@@ -795,14 +856,16 @@ footer {
 
   .mid-bar .item-3 span {
     margin-left: 113px;
+
     line-height: 29px;
   }
 
   .vid-text {
+    position: relative;
+
     width: 1300px;
     height: 508px;
     flex-direction: column;
-    position: relative;
 
     background-image: url('assets/img/vid-text-bg.png');
   }
@@ -836,6 +899,7 @@ footer {
     width: 272px;
     height: 174px;
     margin: 16px 38px 34px 30px;
+
     color: #ffffff;
     font-family: "Segoe WP Light";
     font-size: 29px;
@@ -845,10 +909,11 @@ footer {
   }
 
   .vid-text-content .text-block img {
-    width: 11px;
-    height: 11px;
     top: 209px;
     left: 317px;
+
+    width: 11px;
+    height: 11px;
   }
 
   .vid-text .video-block {
@@ -859,11 +924,12 @@ footer {
   }
 
   .vid-text .twitter-desktop {
+    position: relative;
+
     width: 329px;
     height: 233px;
     display: block;
     margin-top: -1px;
-    position: relative;
 
     background-color: #ec9e03;
   }
@@ -876,11 +942,12 @@ footer {
   }
 
   .vid-text .twitter-desktop span {
-    width: 24px;
-    height: 18px;
     position: absolute;
     top: 9px;
     left: 285px;
+
+    width: 24px;
+    height: 18px;
 
     color: #ffffff;
     font-family: "Segoe WP";
@@ -891,29 +958,31 @@ footer {
   }
 
   .vid-text .twitter-desktop img:last-child {
-    width: 11px;
-    height: 11px;
     position: absolute;
 
     top: 209px;
     left: 309px;
+
+    width: 11px;
+    height: 11px;
   }
 
   .date {
-    display: block;
-    width: 113px;
-    height: 86px;
     position: absolute;
     top: 343px;
     left: 139px;
+
+    display: block;
+    width: 113px;
+    height: 86px;
 
     background-color: #ddb101;
   }
 
   .date span:first-child {
+    display: block;
     width: 55px;
     height: 38px;
-    display: block;
     margin-top: 12px;
     margin-left: 31px;
 
@@ -940,51 +1009,64 @@ footer {
   }
 
   .scroll {
-    height: 15px;
-    width: 896px;
-    display: block;
     position: absolute;
     left: 211px;
     bottom: 23px;
+
+    display: block;
+    height: 15px;
+    width: 896px;
   }
 
   input[type=range] {
     height: 15px;
-    -webkit-appearance: none;
     width: 100%;
+
     border-radius: 7px;
     background-color: rgba(255, 255, 255, 0.71);
+
+    -webkit-appearance: none;
   }
+
   input[type=range]:focus {
     outline: none;
   }
+
   input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
     height: 15px;
-    cursor: pointer;
+
     border-radius: 7px;
+
+    cursor: pointer;
   }
+
   input[type=range]::-webkit-slider-thumb {
-    margin-left: -103px;
     height: 15px;
     width: 197px;
+    margin-top: 0px;
+
     border-radius: 7px;
     background: #ec9e03;
+
     cursor: pointer;
     -webkit-appearance: none;
-    margin-top: 0px;
   }
+
   input[type=range]:focus::-webkit-slider-runnable-track {
     border-radius: 7px;
   }
+
   input[type=range]::-ms-track {
     width: 100%;
     height: 15px;
-    cursor: pointer;
+
     background: transparent;
     border-color: transparent;
     color: transparent;
     border-radius: 7px;
+
+    cursor: pointer;
   }
   input[type=range]::-ms-fill-lower {
     background: #FFFFFF;
@@ -997,12 +1079,14 @@ footer {
     box-shadow: 0px 0px 0px #000000;
   }
   input[type=range]::-ms-thumb {
-    box-shadow: 0px 0px 0px #000000;
-    border: 0px solid #EC9E03;
     height: 15px;
     width: 45px;
+
+    box-shadow: 0px 0px 0px #000000;
+    border: 0px solid #EC9E03;
     border-radius: 7px;
     background: #ec9e03;
+
     cursor: pointer;
   }
 
@@ -1011,9 +1095,10 @@ footer {
   }
 
   .templates {
+    position: relative;
+
     width: 1300px;
     height: 498px;
-    position: relative;
 
     background-image: url('assets/img/templates-bg.png');
   }
@@ -1021,16 +1106,18 @@ footer {
   .templates h2 {
     padding-top: 44px;
     padding-left: 4px;
+
     font-size: 41px;
     text-align: center;
   }
 
   .templates-wrapper {
-    display: flex;
-    margin: 0;
     position: absolute;
     top: 56px;
     left: 111px;
+
+    display: flex;
+    margin: 0;
   }
 
   .templates-wrapper ul {
@@ -1045,13 +1132,15 @@ footer {
   .templates-wrapper ul {
     margin-top: 102px;
     margin-left: 49px;
+
     list-style-image: url('assets/img/list-point.png');
   }
 
   .templates-wrapper ul li {
-    padding-left: 10px;
     width: 313px;
     height: 22px;
+    padding-left: 10px;
+
     color: #a9a9a7;
     font-family: "Open Sans";
     font-size: 22px;
@@ -1076,9 +1165,10 @@ footer {
   }
 
   footer {
+    position: relative;
+
     width: 1300px;
     height: 64px;
-    position: relative;
   }
 
   .footer-logo {
@@ -1095,6 +1185,7 @@ footer {
   .footer-logo h2 {
     margin-top: 10px;
     margin-left: 5px;
+
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.42);
     color: #ffffff;
     font-family: "Open Sans";
@@ -1108,16 +1199,21 @@ footer {
     position: absolute;
     top: 0;
     left: 0;
+
     display: block;
     width: 1300px;
     height: 1366px;
+
     background-image: url('assets/img/top-bg.png');
+
     z-index: -99;
   }
 
   .text-block img:hover, .twitter-desktop img:last-child:hover {
-    transition: 0.5s ease;
     top: 210px;
+
+    transition: 0.5s ease;
+
     cursor: pointer;
   }
 }
