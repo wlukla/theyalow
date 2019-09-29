@@ -232,7 +232,7 @@ video {
 
 .mid-bar {
   position: relative;
-  background-color: #ffffff;
+  background-color: none;
   background-position: -4px 0;
   width: 640px;
   height: 170px;
@@ -729,6 +729,7 @@ footer {
     position: relative;
     box-shadow: 0 8px 10px 10px rgba(0, 0, 0, 0.75);
 
+    background-color: #ffffff;
     background-image: url('assets/img/mid-bar-bg.png');
   }
 
