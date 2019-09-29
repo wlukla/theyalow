@@ -233,7 +233,7 @@ video {
 
 .mid-bar {
   position: relative;
-  background-color: none;
+  background-color: transparent;
   background-position: -4px 0;
   width: 640px;
   height: 170px;
@@ -289,7 +289,7 @@ video {
   font-family: 'Segoe WP Light';
   text-transform: uppercase;
   font-size: 23px;
-  color: rgba(0, 0, 0, 255);
+  color: #000000;
   letter-spacing: 0.23px;
 }
 
@@ -845,7 +845,7 @@ footer {
   }
 
   .vid-text-content .text-block img {
-    width: 11;
+    width: 11px;
     height: 11px;
     top: 209px;
     left: 317px;
@@ -940,29 +940,70 @@ footer {
   }
 
   .scroll {
+    height: 15px;
+    width: 896px;
     display: block;
     position: absolute;
-    left: 213px;
-    bottom: 21px;
+    left: 211px;
+    bottom: 23px;
   }
 
-  .scroll .back {
-    width: 896px;
+  input[type=range] {
     height: 15px;
-    background-color: #ffffff;
-    opacity: 0.48;
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.71);
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 15px;
+    cursor: pointer;
     border-radius: 7px;
   }
-
-  .scroll .front {
+  input[type=range]::-webkit-slider-thumb {
+    margin-left: -103px;
+    height: 15px;
     width: 197px;
-    height: 15px;
-    position: absolute;
-    top: 0;
-    left: 247px;
-
     border-radius: 7px;
-    background-color: #ec9e03;
+    background: #ec9e03;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: 0px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    border-radius: 7px;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 15px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+    border-radius: 7px;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #FFFFFF;
+    border-radius: 7px;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #FFFFFF;
+    border: 0px solid #000000;
+    border-radius: 7px;
+    box-shadow: 0px 0px 0px #000000;
+  }
+  input[type=range]::-ms-thumb {
+    box-shadow: 0px 0px 0px #000000;
+    border: 0px solid #EC9E03;
+    height: 15px;
+    width: 45px;
+    border-radius: 7px;
+    background: #ec9e03;
+    cursor: pointer;
   }
 
   .twitter {
@@ -1072,5 +1113,11 @@ footer {
     height: 1366px;
     background-image: url('assets/img/top-bg.png');
     z-index: -99;
+  }
+
+  .text-block img:hover, .twitter-desktop img:last-child:hover {
+    transition: 0.5s ease;
+    top: 210px;
+    cursor: pointer;
   }
 }
