@@ -40,6 +40,12 @@
 
 }
 
+.body-wrapper {
+  width: 640px;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -48,9 +54,15 @@ a {
   background-image: linear-gradient(to top, #464646, #5d5d5d 100%);
 }
 
+.body-wrapper {
+  position: relative;
+  width: 640px;
+}
+
 header {
   display: flex;
   height: 62px;
+  width: 100%;
 }
 
 .logo {
@@ -586,6 +598,10 @@ footer {
 }
 
 @media screen and (min-width: 1000px) {
+  .body-wrapper {
+    width: 1300px;
+  }
+
   header {
     position: relative;
 
